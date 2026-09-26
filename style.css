@@ -1,0 +1,79 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    border-radius: 25px;
+    width: 500px;
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 10px 10px 10px 10px rgb(0, 0, 0, 0.2);
+}
+
+.linha-vertical {
+    width: 2px;
+    height: 45vh;
+    color: black;
+}
+
+.opcoes-login {
+    height: 100px;
+    width: 250px;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+button {
+    display: flex;
+    gap: 3;
+    justify-content: center;
+    align-items: center;
+    padding-left: 10px;
+    width: 150px;
+    height: 50px;
+    background-color:#9833e0;
+    color: white;
+    font-size: 20px;
+    border-radius: 25px;
+    transition: 0.3s ease;
+}
+
+button:hover {
+    background-color: indigo;
+}
+
+.titulo-login {
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to right,rgba(152, 51, 224, 1) 95%, rgba(255, 255, 255, 0) 99%);
+    border-radius: 25px 0 0 25px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    color: #ffffff;
+}
+
+.opcoes-login a {
+    font-size: 10px;
+    text-decoration: none;
+    color: black;
+}

@@ -30,8 +30,8 @@ body {
 }
 
 .opcoes-login, .form-login {
-    height: 100px;
     width: 250px;
+    height: 200px;
     margin: 0;
     display: flex;
     flex-direction: column;
@@ -49,15 +49,13 @@ ul {
 
 .botao a {
     display: flex;
-    gap: 3px;
     justify-content: center;
     align-items: center;
-    padding-left: 10px;
-    width: 150px;
-    height: 50px;
+    width: 120px;
+    height: 30px;
     background-color:#9833e0;
     color: white;
-    font-size: 20px;
+    font-size: 18px;
     border-radius: 25px;
     transition: 0.3s ease;
     text-decoration: none;
@@ -65,6 +63,7 @@ ul {
 
 .botao:hover a {
     background-color: indigo;
+    transform: scale(1.1);
 }
 
 .titulo-login {
@@ -81,9 +80,16 @@ ul {
 }
 
 .opcoes-login > a {
-    font-size: 10px;
+    font-size: 12px;
     text-decoration: none;
     color: black;
+    transition: 0.3s ease;
+    position: relative;
+    top: 20px;
+}
+
+.opcoes-login > a:hover {
+    transform: scale(1.1);
 }
 
 /* Login */
@@ -98,13 +104,13 @@ ul {
     margin-left: -30px;
     padding: 10px;
     gap: 8px;
-    /* border: solid 2px red; */
     margin-right: 10px;
 }
 
 label {
     display: flex;
     align-self: flex-start;
+    font-weight: bold;
 }
 
 .titulo-acesso {
@@ -125,9 +131,8 @@ label {
     display: flex;
     justify-content: center;
     align-items: center;
-    padding-left: 10px;
     width: 100px;
-    height: 50px;
+    height: 30px;
     background-color:#9833e0;
     color: white;
     font-size: 14px;
@@ -140,6 +145,7 @@ label {
 
 .form-login button:hover {
     background-color: indigo;
+    transform: scale(1.1);
 }
 
 .form-login input {

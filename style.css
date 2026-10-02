@@ -29,7 +29,7 @@ body {
     color: black;
 }
 
-.opcoes-login {
+.opcoes-login, .form-login {
     height: 100px;
     width: 250px;
     margin: 0;
@@ -40,9 +40,16 @@ body {
     gap: 10px;
 }
 
-button {
+ul {
     display: flex;
-    gap: 3;
+    flex-direction: column;
+    gap: 10px;
+    color: white;
+}
+
+.botao a {
+    display: flex;
+    gap: 3px;
     justify-content: center;
     align-items: center;
     padding-left: 10px;
@@ -53,9 +60,10 @@ button {
     font-size: 20px;
     border-radius: 25px;
     transition: 0.3s ease;
+    text-decoration: none;
 }
 
-button:hover {
+.botao:hover a {
     background-color: indigo;
 }
 
@@ -72,8 +80,72 @@ button:hover {
     color: #ffffff;
 }
 
-.opcoes-login a {
+.opcoes-login > a {
     font-size: 10px;
     text-decoration: none;
     color: black;
+}
+
+/* Login */
+
+.form-login {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 300px;
+    height: auto;
+    margin-left: -30px;
+    padding: 10px;
+    gap: 8px;
+    /* border: solid 2px red; */
+    margin-right: 10px;
+}
+
+label {
+    display: flex;
+    align-self: flex-start;
+}
+
+.titulo-acesso {
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to right,rgba(152, 51, 224, 1) 75%, rgba(255, 255, 255, 0) 80%);
+    border-radius: 25px 0 0 25px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 5px;
+    color: #ffffff;
+    padding-left: 35px;
+}
+
+.form-login button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-left: 10px;
+    width: 100px;
+    height: 50px;
+    background-color:#9833e0;
+    color: white;
+    font-size: 14px;
+    border-radius: 25px;
+    transition: 0.3s ease;
+    text-decoration: none;
+    margin-top: 5px;
+    align-self: flex-end;
+} 
+
+.form-login button:hover {
+    background-color: indigo;
+}
+
+.form-login input {
+    width: 200px;
+    height: 30px;
+    border-radius: 5px;
+    border-style: solid;
+    padding-left: 5px;
 }

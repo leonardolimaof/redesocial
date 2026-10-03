@@ -120,11 +120,27 @@ label {
     border-radius: 25px 0 0 25px;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: space-around;
     align-items: flex-start;
     gap: 5px;
     color: #ffffff;
     padding-left: 35px;
+}
+
+.titulo-acesso a {
+    text-decoration: none;
+    color: #ffffff;
+    font-weight: bold;
+    transition: 0.3s ease;
+}
+
+.titulo-acesso a:hover {
+    color: #000000;
+}
+
+.titulo-acesso h3 {
+    position: relative;
+    bottom: 80px;
 }
 
 .form-login button {

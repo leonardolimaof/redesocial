@@ -29,9 +29,9 @@ body {
     color: black;
 }
 
-.opcoes-login {
-    height: 100px;
+.opcoes-login, .form-login {
     width: 250px;
+    height: 200px;
     margin: 0;
     display: flex;
     flex-direction: column;
@@ -40,23 +40,30 @@ body {
     gap: 10px;
 }
 
-button {
+ul {
     display: flex;
-    gap: 3;
-    justify-content: center;
-    align-items: center;
-    padding-left: 10px;
-    width: 150px;
-    height: 50px;
-    background-color:#9833e0;
+    flex-direction: column;
+    gap: 10px;
     color: white;
-    font-size: 20px;
-    border-radius: 25px;
-    transition: 0.3s ease;
 }
 
-button:hover {
+.botao a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 120px;
+    height: 30px;
+    background-color:#9833e0;
+    color: white;
+    font-size: 18px;
+    border-radius: 25px;
+    transition: 0.3s ease;
+    text-decoration: none;
+}
+
+.botao:hover a {
     background-color: indigo;
+    transform: scale(1.1);
 }
 
 .titulo-login {
@@ -72,8 +79,95 @@ button:hover {
     color: #ffffff;
 }
 
-.opcoes-login a {
-    font-size: 10px;
+.opcoes-login > a {
+    font-size: 12px;
     text-decoration: none;
     color: black;
+    transition: 0.3s ease;
+    position: relative;
+    top: 20px;
+}
+
+.opcoes-login > a:hover {
+    transform: scale(1.1);
+}
+
+/* Login */
+
+.form-login {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 300px;
+    height: auto;
+    margin-left: -30px;
+    padding: 10px;
+    gap: 8px;
+    margin-right: 10px;
+}
+
+label {
+    display: flex;
+    align-self: flex-start;
+    font-weight: bold;
+}
+
+.titulo-acesso {
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to right,rgba(152, 51, 224, 1) 75%, rgba(255, 255, 255, 0) 80%);
+    border-radius: 25px 0 0 25px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: flex-start;
+    gap: 5px;
+    color: #ffffff;
+    padding-left: 35px;
+}
+
+.titulo-acesso a {
+    text-decoration: none;
+    color: #ffffff;
+    font-weight: bold;
+    transition: 0.3s ease;
+}
+
+.titulo-acesso a:hover {
+    color: #000000;
+}
+
+.titulo-acesso h3 {
+    position: relative;
+    bottom: 80px;
+}
+
+.form-login button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100px;
+    height: 30px;
+    background-color:#9833e0;
+    color: white;
+    font-size: 14px;
+    border-radius: 25px;
+    transition: 0.3s ease;
+    text-decoration: none;
+    margin-top: 5px;
+    align-self: flex-end;
+} 
+
+.form-login button:hover {
+    background-color: indigo;
+    transform: scale(1.1);
+}
+
+.form-login input {
+    width: 200px;
+    height: 30px;
+    border-radius: 5px;
+    border-style: solid;
+    padding-left: 5px;
 }

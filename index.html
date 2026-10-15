@@ -1,27 +1,59 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
     <title>Tela inicial</title>
-</head>
-<body>
-    <div class="container">
-        <div class="titulo-login">
-            <h1>Bem vindo de volta</h1>
-
-            <h3>Escolha uma opção</h3>
-        </div>
-
-        <div class="opcoes-login">
-            <ul>
-                <li class="botao"><a href="./pages/login.html">Login</a></li>
-                <li class="botao"><a href="./pages/cadastro.html">Cadastro</a></li>
-            </ul>
-
-            <a href="#">Esqueceu sua senha?</a>
-        </div>
+  </head>
+  <body>
+    <div class="container-texto">
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam doloribus
+        ipsum iusto itaque, architecto libero ut aliquam quisquam amet quibusdam
+        aut minus, aspernatur dolorum veniam quae exercitationem! Corrupti sunt
+        quod nam error, minus recusandae fuga aliquid est? Labore vel aut
+        doloremque ipsa error veritatis mollitia, fugit officia quo sint
+        inventore.
+      </p>
     </div>
-</body>
+    <div class="container">
+      <div class="logo">
+        <img src="./img/logo.png" alt="Logo da rede social" />
+      </div>
+
+      <div class="titulo-login">
+        <h1>Bem vindo de volta</h1>
+
+        <h3>Escolha uma opção</h3>
+      </div>
+
+      <div class="opcoes-login">
+        <ul>
+          <li class="botao"><a href="./pages/login.html">Login</a></li>
+          <li class="botao"><a href="./pages/cadastro.html">Cadastro</a></li>
+        </ul>
+
+        <a href="#">Esqueceu sua senha?</a>
+      </div>
+    </div>
+    <script>
+      const paragraph = document.querySelector(".container-texto p");
+      const text = paragraph.textContent.trim().replace(/\s+/g, " ");
+      let characterIndex = 0;
+
+      paragraph.textContent = "";
+
+      function typeNextCharacter() {
+        paragraph.textContent += text[characterIndex];
+        characterIndex += 1;
+
+        if (characterIndex < text.length) {
+          setTimeout(typeNextCharacter, 35);
+        }
+      }
+
+      typeNextCharacter();
+    </script>
+  </body>
 </html>

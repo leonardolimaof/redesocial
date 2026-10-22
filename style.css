@@ -157,6 +157,7 @@ label {
     text-decoration: none;
     margin-top: 5px;
     align-self: flex-end;
+    border: none;
 } 
 
 .form-login button:hover {

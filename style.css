@@ -251,11 +251,12 @@ label {
 .form-verificacao {
     width: 500px;
     height: 200px;
+    padding: 0;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    gap: 40px;
+    gap: 10px;
 }
 
 .form-verificacao input {
@@ -270,6 +271,5 @@ label {
 }
 
 .form-verificacao label {
-    align-self: center;
-    color: #ffffff;
+    padding-left: 18px;
 }

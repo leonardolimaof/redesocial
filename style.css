@@ -113,7 +113,7 @@ ul {
     text-decoration: none;
 }
 
-.botao:hover a {
+.botao a:hover {
     background-color: #030e72;
     transform: scale(1.1);
 }
@@ -134,14 +134,14 @@ ul {
 .opcoes-login > a {
     font-size: 12px;
     text-decoration: none;
-    color: black;
+    color: #ffffff;
     transition: 0.3s ease;
     position: relative;
     top: 20px;
 }
 
 .opcoes-login > a:hover {
-    transform: scale(1.1);
+    text-decoration: underline;
 }
 
 /* Login */
@@ -221,4 +221,56 @@ label {
     border-radius: 5px;
     border-style: solid;
     padding-left: 5px;
+    outline: none;
+}
+
+/* ESQUECEU-SENHA */
+.form-login > a,
+.form-verificacao > a {
+    width: 100px;
+    height: 26px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 12px;
+    position: relative;
+    top: 14px;
+    background-color: #1B2CC1;
+    border-radius: 16px;
+    transition: 0.3s ease;
+    border: none;
+}
+
+.form-login > a:hover,
+.form-verificacao a:hover {
+    background-color: #030e72;
+}
+
+/* VERIFICAÇÃ0 E-MAIL */
+.form-verificacao {
+    width: 500px;
+    height: 200px;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.form-verificacao input {
+    width: 30px;
+    height: 25px;
+    border-radius: 5px;
+    border: 1px solid #999;
+    text-align: center;
+    font-weight: 600;
+    font-size: 14px;
+    outline: none;
+}
+
+.form-verificacao label {
+    padding-left: 18px;
 }

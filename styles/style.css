@@ -1,0 +1,123 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+header {
+  background-color: #333;
+  color: #fff;
+  padding: 1rem;
+  text-align: center;
+  width: 100%;
+  display: flex;
+}
+nav {
+  background-color: #f5f5f5;
+  color: #000000;
+  text-align: center;
+  align-items: center;
+  display: flex;
+  border: 1px solid #ccc;
+  width: 100%;
+  justify-content: space-around;
+  height: 50px;
+}
+
+ul {
+  list-style-type: none;
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  width: 100%;
+}
+
+li {
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+li:hover {
+  background-color: #e0e0e0;
+}
+
+.logo {
+  position: absolute;
+  top: 16px;
+  left: 110px;
+  width: 50px;
+  height: auto;
+  align-items: center;
+  z-index: 1;
+  transition: transform 0.3s ease;
+}
+
+.logo img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+
+/* Container pai para alinhar os ícones lado a lado */
+.icons-container {
+  position: absolute;
+  top: 20px;
+  left: 700px; /* Posiciona no canto superior direito */
+  display: flex;
+  align-items: center;
+  gap: 15px; /* Espaçamento entre os ícones */
+  z-index: 1;
+}
+
+/* Estilo individual para cada ícone */
+.direct,
+.profile {
+  width: 30px;
+  height: auto;
+  transition: transform 0.3s ease;
+  color: #000000;
+}
+
+.direct:hover,
+.profile:hover {
+  transform: scale(1.1);
+}
+
+.direct img,
+.profile img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  display: block;
+}
+
+/* Estilos do Dropdown */
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  right: 0; /* Alinha o menu com a direita do ícone */
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 2;
+}
+
+/* Exibe o dropdown ao passar o mouse (se necessário) */
+.dropdown:hover .dropdown-content {
+  display: block;
+}

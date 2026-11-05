@@ -116,6 +116,12 @@ li:hover {
   z-index: 2;
 }
 
+.dropdown-content li a {
+  text-decoration: none;
+  color: #000000;
+  font-weight: bold;
+}
+
 /* Exibe o dropdown ao passar o mouse (se necessário) */
 .dropdown:hover .dropdown-content {
   display: block;
